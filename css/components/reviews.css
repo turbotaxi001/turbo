@@ -299,13 +299,11 @@
     width: 60px;
     height: 30px;
   }
+ .reviews__more-btn {
+   padding: 12px 24px;
+   font-size: var(--text-sm);
+ }
 
-  .reviews__more-btn {
-    width: 100%;
-    max-width: 300px;
-    justify-content: center;
-    padding: 12px 20px;
-  }
 }
 
 /* Дуже маленькі екрани (375px та менше) */
@@ -348,8 +346,10 @@
     height: 27px;
   }
 
-  .reviews__more-btn {
-    font-size: var(--text-sm);
-    padding: 10px 18px;
-  }
+    .reviews__more-btn {
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
+      padding: 12px 20px;
+    }
 }
