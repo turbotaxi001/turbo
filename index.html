@@ -68,13 +68,54 @@
           </button>
 
           <ul class="menu__list" id="menu-list" role="list">
-            <li class="menu__item"><a href="#services" class="menu__link">Послуги</a></li>
-            <li class="menu__item"><a href="#tariffs" class="menu__link">Тарифи</a></li>
-            <li class="menu__item"><a href="#app" class="menu__link">Додаток</a></li>
-            <li class="menu__item"><a href="#reviews" class="menu__link">Відгуки</a></li>
-            <li class="menu__item"><a href="#contacts" class="menu__link">Контакти</a></li>
+<li class="menu__item">
+  <a href="#services" class="menu__link" data-i18n="nav.services">Послуги</a>
+</li>
+<li class="menu__item">
+  <a href="#tariffs" class="menu__link" data-i18n="nav.tariffs">Тарифи</a>
+</li>
+<li class="menu__item">
+  <a href="#app" class="menu__link" data-i18n="nav.app">Додаток</a>
+</li>
+<li class="menu__item">
+  <a href="#reviews" class="menu__link" data-i18n="nav.reviews">Відгуки</a>
+</li>
+<li class="menu__item">
+  <a href="#contacts" class="menu__link" data-i18n="nav.contacts">Контакти</a>
+</li>
+
+            <!-- Мобільна версія перемикача мов -->
+            <li class="menu__item menu__item--lang">
+              <div class="language-switcher-mobile">
+<p class="lang-label" data-i18n="language.label">Мова:</p>
+                <div class="lang-buttons">
+                  <button class="lang-btn" data-lang="uk" title="Українська">
+                    <span class="lang-text">UA</span>
+                  </button>
+                  <button class="lang-btn" data-lang="en" title="English">
+                    <span class="lang-text">EN</span>
+                  </button>
+                  <button class="lang-btn" data-lang="pl" title="Polski">
+                    <span class="lang-text">PL</span>
+                  </button>
+                </div>
+              </div>
+            </li>
           </ul>
         </nav>
+
+        <!-- Десктопна версія перемикача мов -->
+        <div class="language-switcher-desktop">
+          <button class="lang-btn-compact active" data-lang="uk" title="Українська">
+            <span class="flag-icon">🇺🇦</span>
+            <span class="lang-code">UA</span>
+          </button>
+          <div class="lang-dropdown">
+            <button class="lang-option" data-lang="uk">Українська</button>
+            <button class="lang-option" data-lang="en">English</button>
+            <button class="lang-option" data-lang="pl">Polski</button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -82,54 +123,64 @@
       <section id="hero" class="hero">
         <div class="hero__container container">
           <div class="hero__content">
-            <h1 class="hero__title">Швидке таксі <span class="hero__title--highlight">Turbo Taxi</span></h1>
-            <p class="hero__subtitle">
+            <h1 class="hero__title" data-i18n="hero.title">
+              Швидке таксі <span class="hero__title--highlight">Turbo Taxi</span>
+            </h1>
+            <p class="hero__subtitle" data-i18n="hero.subtitle">
               Твій комфорт — наш пріоритет. <br class="hero__br" />
               Відчуй швидкість та преміальний сервіс у кожній поїздці.
             </p>
-            <a href="tel:+380931914414" class="button button--pulse">Викликати TAXI</a>
+            <a href="tel:+380931914414" class="button button--pulse" data-i18n="hero.button">Викликати TAXI</a>
           </div>
         </div>
       </section>
 
       <section id="services" class="services section">
         <div class="services__container container">
-          <h2 class="section-title">Наші Послуги</h2>
+          <h2 class="section-title" data-i18n="services.title">Наші Послуги</h2>
           <div class="services__grid">
             <article class="service-card">
               <div class="service-card__icon"><i class="fa-solid fa-box-open"></i></div>
-              <h3 class="service-card__title">Доставка</h3>
-              <p class="service-card__text">
+              <h3 class="service-card__title" data-i18n="services.delivery.title">Доставка</h3>
+              <p class="service-card__text" data-i18n="services.delivery.text">
                 Продукти, ліки, пошта та передачі. Доставимо швидко прямо до твоїх дверей.
               </p>
-              <a href="tel:+380931914414" class="button button--primary card-btn">Замовити</a>
+              <a href="tel:+380931914414" class="button button--primary card-btn" data-i18n="services.order"
+                >Замовити</a
+              >
             </article>
 
             <article class="service-card">
               <div class="service-card__icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-              <h3 class="service-card__title">Авто на час</h3>
-              <p class="service-card__text">
+              <h3 class="service-card__title" data-i18n="services.rental.title">Авто на час</h3>
+              <p class="service-card__text" data-i18n="services.rental.text">
                 Замовляй машину на певну годину. Ми будемо вчасно, щоб ти нікуди не запізнився.
               </p>
-              <a href="tel:+380931914414" class="button button--primary card-btn">Замовити</a>
+              <a href="tel:+380931914414" class="button button--primary card-btn" data-i18n="services.order"
+                >Замовити</a
+              >
             </article>
 
             <article class="service-card">
               <div class="service-card__icon"><i class="fa-solid fa-user-shield"></i></div>
-              <h3 class="service-card__title">Тверезий водій</h3>
-              <p class="service-card__text">
+              <h3 class="service-card__title" data-i18n="services.driver.title">Тверезий водій</h3>
+              <p class="service-card__text" data-i18n="services.driver.text">
                 Відпочивай спокійно. Наш професійний водій безпечно доставить тебе і твоє авто додому.
               </p>
-              <a href="tel:+380931914414" class="button button--primary card-btn">Замовити</a>
+              <a href="tel:+380931914414" class="button button--primary card-btn" data-i18n="services.order"
+                >Замовити</a
+              >
             </article>
 
             <article class="service-card">
               <div class="service-card__icon"><i class="fa-solid fa-van-shuttle"></i></div>
-              <h3 class="service-card__title">Трансфери</h3>
-              <p class="service-card__text">
+              <h3 class="service-card__title" data-i18n="services.transfer.title">Трансфери</h3>
+              <p class="service-card__text" data-i18n="services.transfer.text">
                 Групові поїздки мікроавтобусом. Ідеально для великих компаній та подорожей.
               </p>
-              <a href="tel:+380931914414" class="button button--primary card-btn">Замовити</a>
+              <a href="tel:+380931914414" class="button button--primary card-btn" data-i18n="services.order"
+                >Замовити</a
+              >
             </article>
           </div>
         </div>
@@ -137,47 +188,47 @@
 
       <section id="tariffs" class="tariffs section">
         <div class="tariffs__container container">
-          <h2 class="section-title">Наші Тарифи</h2>
+          <h2 class="section-title" data-i18n="tariffs.title">Наші Тарифи</h2>
           <div class="tariffs__wrapper">
             <div class="tariffs__block">
-              <h3 class="tariffs__subtitle">Поїздки по місту та області</h3>
+              <h3 class="tariffs__subtitle" data-i18n="tariffs.city.title">Поїздки по місту та області</h3>
               <ul class="tariffs__list">
                 <li class="tariffs__item">
-                  <span>Мінімальне замовлення (до 2 км)</span>
+                  <span data-i18n="tariffs.city.minimal">Мінімальне замовлення (до 2 км)</span>
                   <span class="tariffs__price">80 грн</span>
                 </li>
                 <li class="tariffs__item">
-                  <span>По місту (після 2 км)</span>
+                  <span data-i18n="tariffs.city.within">По місту (після 2 км)</span>
                   <span class="tariffs__price">33 грн/км</span>
                 </li>
                 <li class="tariffs__item">
-                  <span>За місто</span>
+                  <span data-i18n="tariffs.city.outside">За місто</span>
                   <span class="tariffs__price">35 грн/км</span>
                 </li>
                 <li class="tariffs__item">
-                  <span>Очікування (простій)</span>
+                  <span data-i18n="tariffs.city.waiting">Очікування (простій)</span>
                   <span class="tariffs__price">4 грн/хв</span>
                 </li>
               </ul>
             </div>
 
             <div class="tariffs__block">
-              <h3 class="tariffs__subtitle">Додаткові послуги</h3>
+              <h3 class="tariffs__subtitle" data-i18n="tariffs.extra.title">Додаткові послуги</h3>
               <ul class="tariffs__list">
                 <li class="tariffs__item">
-                  <span>Кур'єрська доставка</span>
+                  <span data-i18n="tariffs.extra.courier">Кур'єрська доставка</span>
                   <span class="tariffs__price">130 грн</span>
                 </li>
                 <li class="tariffs__item">
-                  <span>Тверезий водій</span>
+                  <span data-i18n="tariffs.extra.sober">Тверезий водій</span>
                   <span class="tariffs__price" data-plus>300 грн</span>
                 </li>
                 <li class="tariffs__item">
-                  <span>Перевезення тварин</span>
+                  <span data-i18n="tariffs.extra.pets">Перевезення тварин</span>
                   <span class="tariffs__price" data-plus>40 грн</span>
                 </li>
                 <li class="tariffs__item">
-                  <span>Трансфер (мікроавтобус)</span>
+                  <span data-i18n="tariffs.extra.minibus">Трансфер (мікроавтобус)</span>
                   <span class="tariffs__price" data-plus>60 грн</span>
                 </li>
               </ul>
@@ -188,13 +239,13 @@
 
       <section id="app" class="app-promo section">
         <div class="app-promo__container container">
-          <h2 class="app-promo__title title">Наш мобільний додаток</h2>
+          <h2 class="app-promo__title title" data-i18n="app.title">Наш мобільний додаток</h2>
           <div class="app-promo__wrapper">
             <div class="app-promo__info">
               <ul class="app-promo__list list-check">
-                <li class="list-check__item">Відстеження авто в реальному часі</li>
-                <li class="list-check__item">Попередня вартість поїздки</li>
-                <li class="list-check__item">Зручна оплата карткою</li>
+                <li class="list-check__item" data-i18n="app.feature1">Відстеження авто в реальному часі</li>
+                <li class="list-check__item" data-i18n="app.feature2">Попередня вартість поїздки</li>
+                <li class="list-check__item" data-i18n="app.feature3">Зручна оплата карткою</li>
               </ul>
               <div class="app-promo__links">
                 <a
@@ -203,6 +254,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Завантажити з Google Play"
+                  data-i18n="app.googlePlay"
                 >
                   Google Play
                 </a>
@@ -212,6 +264,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Завантажити з App Store"
+                  data-i18n="app.appStore"
                 >
                   App Store
                 </a>
@@ -221,13 +274,13 @@
               <div class="qr-wrapper">
                 <div class="qr-code">
                   <img src="./assets/images/qr-code-google-app-store.svg" alt="QR Google Play" />
-                  <p class="qr-code__text">Android</p>
-                  <p class="qr-code__subtitle">Наведіть камеру</p>
+                  <p class="qr-code__text" data-i18n="app.android">Android</p>
+                  <p class="qr-code__subtitle" data-i18n="app.scanHint">Наведіть камеру</p>
                 </div>
                 <div class="qr-code">
                   <img src="./assets/images/qr-code-google-app-store.svg" alt="QR App Store" />
-                  <p class="qr-code__text">iOS (iPhone)</p>
-                  <p class="qr-code__subtitle">Наведіть камеру</p>
+                  <p class="qr-code__text" data-i18n="app.ios">iOS (iPhone)</p>
+                  <p class="qr-code__subtitle" data-i18n="app.scanHint">Наведіть камеру</p>
                 </div>
               </div>
             </div>
@@ -237,7 +290,7 @@
 
       <section class="reviews section" id="reviews">
         <div class="reviews__container container">
-          <h2 class="reviews__title title">Що про нас кажуть пасажири</h2>
+          <h2 class="reviews__title title" data-i18n="reviews.title">Що про нас кажуть пасажири</h2>
 
           <div class="reviews__grid">
             <article class="reviews__item review-card">
@@ -370,6 +423,7 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Переглянути більше відгуків на Google Maps"
+              data-i18n="reviews.moreButton"
             >
               Більше відгуків на Google Maps
               <i class="fa-solid fa-arrow-right"></i>
@@ -379,30 +433,30 @@
       </section>
     </main>
 
-    <footer class="footer" id="contacts">
-      <div class="footer__container container">
-        <div class="footer__top">
-          <div class="footer__brand">
-            <a href="#" class="footer__logo">
-              <img src="./assets/icons/logo.svg" alt="Turbo Taxi" class="logo-img" />
-            </a>
-            <p class="footer__description">
-              Turbo Taxi — ваш надійний партнер у поїздках по місту та за його межі. Швидко, безпечно та завжди вчасно.
-            </p>
-          </div>
+<footer class="footer" id="contacts">
+  <div class="footer__container container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">
+          <img src="./assets/icons/logo.svg" alt="Turbo Taxi" class="logo-img" />
+        </a>
+        <p class="footer__description" data-i18n="footer.description">
+          Turbo Taxi — ваш надійний партнер у поїздках по місту та за його межі. Швидко, безпечно та завжди вчасно.
+        </p>
+      </div>
 
-          <div class="footer__nav">
-            <h4 class="footer__subtitle">Навігація</h4>
-            <ul class="footer__list">
-              <li><a href="#services">Послуги</a></li>
-              <li><a href="#tariffs">Тарифи</a></li>
-              <li><a href="#app">Додаток</a></li>
-              <li><a href="#reviews">Відгуки</a></li>
-            </ul>
-          </div>
+      <div class="footer__nav">
+        <h4 class="footer__subtitle" data-i18n="footer.navigation">Навігація</h4>
+        <ul class="footer__list">
+          <li><a href="#services" data-i18n="nav.services">Послуги</a></li>
+          <li><a href="#tariffs" data-i18n="nav.tariffs">Тарифи</a></li>
+          <li><a href="#app" data-i18n="nav.app">Додаток</a></li>
+          <li><a href="#reviews" data-i18n="nav.reviews">Відгуки</a></li>
+        </ul>
+      </div>
 
           <div class="footer__contacts">
-            <h4 class="footer__subtitle">Зв'яжіться з нами</h4>
+<h4 class="footer__subtitle" data-i18n="footer.contact">Зв'яжіться з нами</h4>
             <a href="tel:+380931914414" class="footer__phone">+38 (093) 191 44 14</a>
             <div class="footer__social">
               <a
@@ -445,13 +499,13 @@
           </div>
         </div>
 
-        <div class="footer__bottom">
-          <div class="footer__copyright-wrap">
-            <p class="footer__copy">&copy; 2026 Turbo Taxi. Всі права захищені.</p>
-          </div>
-        </div>
+  <div class="footer__bottom">
+      <div class="footer__copyright-wrap">
+        <p class="footer__copy" data-i18n="footer.copyright">&copy; 2026 Turbo Taxi. Всі права захищені.</p>
       </div>
-    </footer>
+    </div>
+  </div>
+</footer>
 
     <script type="module" src="./js/main.js"></script>
   </body>
