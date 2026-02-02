@@ -241,13 +241,11 @@ function switchLanguage(lang) {
   localStorage.setItem('language', lang)
   document.documentElement.lang = lang
 
-  // всі елементи з data-i18n
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.dataset.i18n
     const value = translations[lang][key]
 
     if (value) {
-      // Перевіряємо, чи є HTML в тексті
       if (value.includes('<')) {
         element.innerHTML = value
       } else {
@@ -302,7 +300,6 @@ function loadSavedLanguage() {
   }
 }
 
-// Ініціалізація
 export function initLanguage() {
   document.querySelectorAll('.lang-btn, .lang-btn-compact, .lang-option').forEach(btn => {
     btn.addEventListener('click', e => {
